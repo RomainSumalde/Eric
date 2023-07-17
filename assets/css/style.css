@@ -79,7 +79,6 @@ h6 {
 #header .logo {
   font-size: 28px;
   margin: 0;
-  padding: 0;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -106,7 +105,7 @@ h6 {
 * Desktop Navigation 
 */
 .navbar {
-  padding: 242px;
+  padding: 244px;
 }
 
 .navbar ul {
@@ -360,8 +359,8 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 800px 10px 0;
-  font-size: 60px;
+  margin: 0 1100px 10px 0;
+  font-size: 80px;
   font-family: "Bangers", cursive;
   color: #fff;
 }
@@ -370,10 +369,10 @@ h6 {
   position: relative;
   color: #1a1a1d;
   -webkit-text-stroke: 0.01vw #1a1a1d;
-  font-size: 30px;
+  font-size: 50px;
   font-family: "Bitter", serif;
   text-transform: uppercase;
-  margin: 0 800px 10px 0;
+  margin: 0 1100px 10px 0;
   margin-bottom: 50px;
 }
 
@@ -384,9 +383,9 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  color: #6f2232;
-  -webkit-text-stroke: 1px #c3073f;
-  border-right: 2px solid #c3073f;
+  color: #1a1a1d;
+  -webkit-text-stroke: 1px #fff;
+  border-right: 2px solid #fff;
   overflow: hidden;
   animation: animate 6s linear infinite;
 }
@@ -490,7 +489,7 @@ h6 {
 }
 .tab-contents ul li p{
   color: #1a1a1d;
-  margin: 0 40px 0;
+  margin: 0 25px 0;
 }
 .tab-contents{
   display: none;
