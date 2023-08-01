@@ -331,14 +331,35 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/BG_CAR-01.jpg") top right;
+  background: url("../img/1.mp4") top right;
   background-size: cover;
   position: relative;
 }
 
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
 #hero:before {
   content: "";
-  /*background: rgba(0, 0, 0, 0.445);*/
+  background: rgba(0, 0, 0, 0.541);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -360,8 +381,16 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 1100px 10px 0;
+  margin: 0 1100px 0 0;
   font-size: 80px;
+  font-family: "Bangers", cursive;
+  color: #fff;
+}
+
+#hero h3 {
+  margin: -2px 1100px -20px 0;
+  font-size: 50px;
+  font-weight: 100;
   font-family: "Bangers", cursive;
   color: #fff;
 }
@@ -373,8 +402,8 @@ h6 {
   font-size: 50px;
   font-family: "Bitter", serif;
   text-transform: uppercase;
-  margin: 0 1100px 10px 0;
-  margin-bottom: 50px;
+  margin: 30px 1100px 0 0;
+  margin-bottom: 100px;
 }
 
 #hero h2::before{
@@ -710,6 +739,13 @@ section {
   background: url("../img/BG_CAR-06.png") center center no-repeat;
   background-size: cover;
   min-height: 500px;
+}
+
+.about .image1 {
+  background: url("../img/HISTORY\ PIC\ 1.JPG") center center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  margin-bottom: 30px;
 }
 
 .about .skills-content {
@@ -1141,12 +1177,22 @@ section {
 @media only screen and (max-width: 1000px) {
   
   #hero {
-    background-image: url("../img/MOBBG_CAR-01.jpg");
+    background: url("../img/mobbg.png");
+    background-size: cover;
+    position: relative;
   }
   
   #hero h1 {
     margin: 0 300px 10px 0;
-    font-size: 40px;
+    font-size: 70px;
+    font-family: "Bangers", cursive;
+    color: #fff;
+  }
+
+  #hero h3 {
+    margin: -2px 300px -20px 0;
+    font-size: 45px;
+    font-weight: 100;
     font-family: "Bangers", cursive;
     color: #fff;
   }
@@ -1155,15 +1201,16 @@ section {
     position: relative;
     color: #1a1a1d;
     -webkit-text-stroke: 0.01vw #1a1a1d;
-    font-size: 25px;
+    font-size: 45px;
     font-family: "Bitter", serif;
     text-transform: uppercase;
-    margin: 0 300px 0 0;
+    margin: 40px 300px 0 0;
     margin-bottom: 50px;
   }
   
   .about .image{
     margin-bottom: 40px;
+    background-image: url("../img/BG_CAR-04.jpg");
   }
 
   .testimonials .section-header {
@@ -1219,8 +1266,87 @@ section {
   }
   
   .testimonials .social-links a:hover {
-    color: #e0e4cc;
+    color: #fff;
     border-color: #c3073f;
     background: #c3073f;
   }
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: url("../img/footer.jpg") top center no-repeat;
+  background-size: contain;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+  background-color: black;
+}
+
+#footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#footer .container {
+  position: relative;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+  font-family: "Bangers", cursive;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 16px;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #c3073f;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #6f2232;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
 }
